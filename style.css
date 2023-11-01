@@ -4,6 +4,10 @@
  padding: 0;
 }
 
+body {
+ font-size: 16px;
+}
+
 /************** SPELKORT **************/
 
 #spelkort {
