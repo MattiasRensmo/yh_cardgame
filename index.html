@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer type="application/javascript"></script>
+ </head>
+
+ <body>
+  <section id="spelkort">
+   <div id="game-data">
+    <p>Poäng: <span id="points"></span></p>
+    <p>Försök kvar: <span id="tries"></span></p>
+   </div>
+   <div class="spelkort">
+    <div class="corner top-corner">
+     <p class="card-num">A</p>
+     <p class="symbol">&hearts;</p>
+    </div>
+    <div class="center-display"></div>
+    <div class="corner card__bottom-corner">
+     <p class="card-num">A</p>
+     <p class="symbol">&hearts;</p>
+    </div>
+   </div>
+   <div class="guess">
+    <button type="button" class="btn" id="nxt-low">Nästa kort är lägre</button>
+    <button type="button" class="btn" id="nxt-same">Nästa kort är samma</button>
+    <button type="button" class="btn" id="nxt-high">Nästa kort är högre</button>
+   </div>
+  </section>
+ </body>
+</html>
