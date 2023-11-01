@@ -83,83 +83,88 @@ function displayCurrentCard(card) {
 function addCenterSymbols(deck) {
  const layout = {
   2: `
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 3"></p>
   `,
   3: `
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 3"></p>
   `,
   4: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 4"></p>
   `,
   5: `
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
   <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
   `,
   6: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 2"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 2"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
   `,
   7: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2; line-height: .1em;"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
   <p class="symbol" style="grid-column-start: 3; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
   `,
   8: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 8"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 5"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2; line-height: .1em;"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 4; line-height: .1em;"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 5"></p>
   `,
   9: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 7"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 6"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 7"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 5"></p>
+
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2; line-height: .1em;"></p>
+
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 5"></p>
   `,
   10: `
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 7"></p>
-  <p class="symbol" style="grid-column-start: 2; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 1"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 3"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 1; grid-row-start: 6"></p>
+
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 2; line-height: .1em;"></p>
+  <p class="symbol" style="grid-column-start: 2; grid-row-start: 5; line-height: .1em;"></p>
+
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 1"></p>
   <p class="symbol" style="grid-column-start: 3; grid-row-start: 3"></p>
-  <p class="symbol" style="grid-column-start: 3; grid-row-start: 8"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 2"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 4"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 7"></p>
-  <p class="symbol" style="grid-column-start: 4; grid-row-start: 10"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 4"></p>
+  <p class="symbol" style="grid-column-start: 3; grid-row-start: 6"></p>
   `,
-  11: `<img src="./img/chris-fuck.jpg" alt="Knekt Chris O-Neill" style="grid-column: 2/5; grid-row: 2/11">`,
-  12: `<img src="./img/vickan.jpg" alt="Dam Kronprinsessan" style="grid-column: 2/5; grid-row: 2/11">`,
-  13: `<img src="./img/kungen.jpg" alt="Kung Carl Gustav" style="grid-column: 2/5; grid-row: 2/11">`,
-  14: `<p class="symbol" style="grid-column-start: 3; grid-row-start: 6"></p>`,
+  11: `<img src="./img/chris-fuck.jpg" alt="Knekt Chris O-Neill" style="grid-column: span 3"> `,
+  12: `<img src="./img/vickan.jpg" alt="Dam Kronprinsessan" style="grid-column: span 3">`,
+  13: `<img src="./img/kungen.jpg" alt="Kung Carl Gustav" style="grid-column: span 3">`,
+  14: `<p class="symbol" style="grid-column-start: 2; grid-row-start: 1"></p>`,
  };
 
+ // return layout[13];
  return layout[deck.num];
 }
 

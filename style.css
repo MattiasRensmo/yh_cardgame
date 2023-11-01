@@ -15,17 +15,13 @@
 }
 
 .spelkort {
- width: 20rem;
+ width: clamp(2rem, 50vw, 20rem);
  aspect-ratio: 2/3;
  margin: 0 auto;
  background-color: white;
  padding: 1rem;
  border: 1px solid black;
  border-radius: 1rem;
- /* display: grid;
- grid-template-columns: 0.5fr 1fr 0.5fr;
- grid-template-rows: 0.5fr, auto, 0.5fr; */
- /* grid-template-rows: repeat(11, 0.2fr); */
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -39,7 +35,7 @@
 } */
 
 .symbol {
- font-size: 4rem;
+ font-size: clamp(2rem, 8vw, 4rem);
  margin: 0;
 }
 
@@ -87,7 +83,23 @@ img {
 
 .center-display {
  width: 100%;
+ align-self: stretch;
  display: grid;
- grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
- grid-template-rows: repeat(11, 0.2fr);
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-auto-rows: auto;
+ align-content: space-around;
+ /* grid-template-rows: repeat(11, 0.2fr); */
+}
+
+.guess {
+ display: flex;
+ justify-content: center;
+ gap: 0.2rem;
+ flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+ .guess {
+  flex-direction: column;
+ }
 }
