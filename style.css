@@ -180,6 +180,9 @@ img {
   /* height: 45dvh; */
   /* padding: 0.5rem; */
  }
+ .symbol {
+  font-size: 1rem;
+ }
 }
 
 @media (max-width: 230px) {
