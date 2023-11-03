@@ -8,9 +8,21 @@
 
 body {
  width: 100vw;
- /* font-size: 10vw; */
  font-size: clamp(16px, 10vw, 54px);
  font-family: "Roboto", sans-serif;
+}
+
+button {
+ font-size: clamp(16px, 10vw, 54px);
+ font-family: "Roboto", sans-serif;
+}
+
+#game-data,
+.guess {
+ font-size: 50%;
+}
+.btn {
+ font-size: 70%;
 }
 
 /************** SPELKORT **************/
@@ -53,10 +65,11 @@ body {
 }
 .corner {
  font-size: 50%;
+ line-height: 1;
 }
 .corner .symbol {
  /* font-size: 50%; */
- line-height: 0.6em;
+ /* line-height: 0.6em; */
  margin-bottom: 0.5em;
 }
 
@@ -93,9 +106,6 @@ p {
  color: #3b3b3b;
  cursor: pointer;
  display: inline-block;
- font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- /* font-size: 16px; */
  font-weight: 600;
  line-height: normal;
  margin: 0;
@@ -154,6 +164,7 @@ img {
  grid-template-columns: 1fr 1fr 1fr;
  grid-auto-rows: auto;
  align-content: space-around;
+ margin: 0.1rem;
  /* grid-template-rows: repeat(11, 0.2fr); */
 }
 
