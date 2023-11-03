@@ -114,12 +114,12 @@ p {
  pointer-events: none;
 }
 
-.button-28:hover {
+/* .button-28:hover {
  color: #fff;
  background-color: #1a1a1a;
  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
  transform: translateY(-2px);
-}
+} */
 
 .button-28:active {
  box-shadow: none;
@@ -167,15 +167,30 @@ img {
  }
 }
 
-@media (max-width: 230px) {
+@media (max-height: 840px) and (min-height: 500px) {
+ .spelkort {
+  height: 45dvh;
+ }
+}
+
+@media (max-width: 376px) {
  .spelkort {
   width: auto;
-  padding: 0.5rem;
+  /* height: 45dvh; */
+  /* padding: 0.5rem; */
  }
  .center-display {
   margin-inline: 0rem;
  }
- p {
-  font-size: 1rem;
+
+ @media (max-width: 230px) {
+  .spelkort {
+   /* width: auto; */
+   padding: 0.5rem;
+  }
+
+  p {
+   font-size: 1rem;
+  }
  }
 }
