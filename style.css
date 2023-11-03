@@ -47,7 +47,7 @@ body {
 } */
 
 .symbol {
- font-size: clamp(2rem, 18vw, 4rem);
+ font-size: 4rem;
  margin: 0;
 }
 
@@ -145,7 +145,7 @@ img {
 
 .center-display {
  width: 100%;
- margin-inline: 1rem;
+
  align-self: stretch;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
@@ -180,18 +180,15 @@ img {
   /* height: 45dvh; */
   /* padding: 0.5rem; */
  }
- .center-display {
-  margin-inline: 0rem;
+}
+
+@media (max-width: 230px) {
+ .spelkort {
+  /* width: auto; */
+  padding: 0.5rem;
  }
 
- @media (max-width: 230px) {
-  .spelkort {
-   /* width: auto; */
-   padding: 0.5rem;
-  }
-
-  p {
-   font-size: 1rem;
-  }
+ p {
+  font-size: 1rem;
  }
 }
