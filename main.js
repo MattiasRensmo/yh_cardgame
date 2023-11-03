@@ -169,7 +169,8 @@ function addCenterSymbols(deck) {
 }
 
 function createDeck() {
- const colors = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
+ // const colors = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
+ const colors = ["♠", "♦", "♥", "♣"];
  let deck = [];
 
  colors.forEach((color) => {
@@ -177,7 +178,7 @@ function createDeck() {
    let cardDisplayNum;
    let cardCol = "black";
    let cardSym = color;
-   if (cardSym == "&hearts;" || cardSym == "&diams;") cardCol = "red";
+   if (cardSym == "♥" || cardSym == "♦") cardCol = "red";
 
    if (i <= 10) cardDisplayNum = i;
    if (i == 11) cardDisplayNum = "Kn";
