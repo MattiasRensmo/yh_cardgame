@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
  box-sizing: border-box;
  margin: 0;
@@ -6,6 +8,7 @@
 
 body {
  font-size: 16px;
+ font-family: "Roboto", sans-serif;
 }
 
 /************** SPELKORT **************/
@@ -19,7 +22,7 @@ body {
 }
 
 .spelkort {
- width: clamp(2rem, 50vw, 20rem);
+ /* width: clamp(2rem, 50vw, 20rem); */
  aspect-ratio: 2/3;
  margin: 0 auto;
  background-color: white;
@@ -69,8 +72,52 @@ p {
  text-align: center;
 }
 
+/* <!-- HTML !-->
+<button class="button-89" role="button">Button 89</button> */
+
+/* CSS */
+.button-89 {
+ --b: 3px; /* border thickness */
+ --s: 0.45em; /* size of the corner */
+ --color: #373b44;
+
+ padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+ color: var(--color);
+ --_p: var(--s);
+ background: conic-gradient(
+   from 90deg at var(--b) var(--b),
+   #0000 90deg,
+   var(--color) 0
+  )
+  var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+  calc(100% - var(--b) - 2 * var(--_p));
+ transition: 0.3s linear, color 0s, background-color 0s;
+ outline: var(--b) solid #0000;
+ outline-offset: 0.6em;
+ font-size: 16px;
+
+ border: 0;
+
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+ --_p: 0px;
+ outline-color: var(--color);
+ outline-offset: 0.05em;
+}
+
+.button-89:active {
+ background: var(--color);
+ color: #fff;
+}
+
 .btn {
- padding: 1rem 2rem;
+ /* padding: 1rem 2rem; */
+ font-size: 1.1rem;
 }
 
 .black {
