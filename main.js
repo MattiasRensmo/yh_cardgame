@@ -60,7 +60,7 @@ function displayCurrentCard(card) {
   let guess = (document.querySelector(".guess").innerHTML = `
    <p>Sorry du har inga försök kvar! 
    Du fick ${score} poäng</h2>
-   <p><a href="/">Försök igen</a><p>
+   <p><a href="#" onclick="reload()">Försök igen</a><p>
   `);
  }
 
@@ -74,6 +74,10 @@ function displayCurrentCard(card) {
 
  centerDisplay.innerHTML = addCenterSymbols(card);
  addColor(card);
+}
+
+function reload() {
+ location.reload();
 }
 
 function addColor(card) {
