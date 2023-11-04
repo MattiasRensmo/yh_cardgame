@@ -57,9 +57,11 @@ document.querySelector("#nxt-high").addEventListener("click", () => {
 
 function displayCurrentCard(card) {
  if (!tries > 0) {
-  let guess = (document.querySelector(
-   ".guess"
-  ).innerHTML = `<h2>Sorry du har inga försök kvar! Du fick ${score} poäng</h2>`);
+  let guess = (document.querySelector(".guess").innerHTML = `
+   <p>Sorry du har inga försök kvar! 
+   Du fick ${score} poäng</h2>
+   <p><a href="/">Försök igen</a><p>
+  `);
  }
 
  console.log("Showing card", card);
@@ -71,13 +73,22 @@ function displayCurrentCard(card) {
  const centerDisplay = document.querySelector(".center-display");
 
  centerDisplay.innerHTML = addCenterSymbols(card);
+ addColor(card);
+}
 
+function addColor(card) {
  const symbols = document.querySelectorAll(".symbol");
  symbols.forEach((symbol) => {
   symbol.innerHTML = card.symbol;
   symbol.className = "symbol";
   symbol.classList.add(card.color);
  });
+
+ const img = document.querySelector("img");
+ if (img) {
+  img.classList = "";
+  img.classList.add(card.color);
+ }
 }
 
 function addCenterSymbols(deck) {

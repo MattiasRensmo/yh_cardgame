@@ -151,6 +151,13 @@ p {
  color: red;
 }
 
+img.black {
+ border: 2px solid black;
+}
+img.red {
+ border: 2px solid red;
+}
+
 img {
  max-width: 100%;
  border-radius: 0.3rem;
@@ -173,6 +180,10 @@ img {
  justify-content: center;
  gap: 0.2rem;
  flex-wrap: wrap;
+}
+
+a {
+ color: #1a1a1a;
 }
 
 @media (max-width: 600px) {
